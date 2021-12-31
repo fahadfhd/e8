@@ -32,7 +32,7 @@ class HomeProvider extends BaseProvider {
   HomeModel? homeModel;
   Future<HomeModel?> loadHome() async {
     isLoading = true;
-    await WebAPIServices().loadHome().then((value) {
+    await WebAPIServices().loadHomes().then((value) {
       isLoading = false;
       homeModel = value;
 

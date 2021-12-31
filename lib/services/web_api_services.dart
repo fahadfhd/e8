@@ -20,7 +20,7 @@ class WebAPIServices with WebAPIMixin {
   final Dio _dio;
   Dio get dio => _dio;
 
-  Future<HomeModel> loadHome() async => dio
+  Future<HomeModel> loadHomes() => dio
       .get(urls.homeURL)
       .then(super.validateResStatusData)
       .then((value) => getDataPartFromRes(value))
