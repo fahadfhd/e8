@@ -1,5 +1,4 @@
 import 'package:e8/common_widgets/common_button.dart';
-import 'package:e8/common_widgets/home_drop_down_button.dart';
 import 'package:e8/utils/colors.dart';
 import 'package:e8/utils/extension.dart';
 import 'package:e8/utils/size_config.dart';
@@ -31,7 +30,7 @@ class CardScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       InkWell(
-                        child: Icon(
+                        child: const Icon(
                           Icons.arrow_back_ios,
                           color: colorffffff,
                         ),
@@ -100,7 +99,7 @@ class CardScreen extends StatelessWidget {
                                     SizedBox(
                                       width: 111,
                                       child: Column(
-                                        children: [
+                                        children: const [
                                           Text("Quantity:"),
                                         ],
                                       ),
@@ -113,12 +112,12 @@ class CardScreen extends StatelessWidget {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Text("Price"),
+                                          const Text("Price"),
                                           Text(
                                             "AED 199.00",
                                             style: tsS14Black,
                                           ),
-                                          Text("Total"),
+                                          const Text("Total"),
                                           Text(
                                             "AED 199.00",
                                             style: tsS14BoldBLUE,

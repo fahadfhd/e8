@@ -3,7 +3,7 @@ import 'package:e8/providers/base_provider.dart';
 import 'package:e8/services/web_api_services.dart';
 
 class HomeProvider extends BaseProvider {
-  HomeProvider() : super(name: "HomeProvider");
+  HomeProvider() : super(name: "homeProvider");
 
   String? _dropDownInitialValue = '1';
   String? get dropDownInitialValue => _dropDownInitialValue;
@@ -33,8 +33,9 @@ class HomeProvider extends BaseProvider {
   Future<HomeModel?> loadHome() async {
     isLoading = true;
     await WebAPIServices().loadHome().then((value) {
-      homeModel = value;
       isLoading = false;
+      homeModel = value;
+
       return homeModel;
     });
     notifyListeners();

@@ -1,4 +1,3 @@
-import 'package:e8/bottom_nav/bottom_navigtion.dart';
 import 'package:e8/home/providers/home_provider.dart';
 import 'package:e8/home/widgets/home_card.dart';
 import 'package:e8/utils/colors.dart';
@@ -18,11 +17,9 @@ class HomeScreeViw extends StatelessWidget {
     HomeProvider homeProvider = Provider.of<HomeProvider>(context);
     return SafeArea(
       child: homeProvider.isLoading == true
-          ? const Center(
-              child: CircularProgressIndicator(),
-            )
+          ? const Center(child: CircularProgressIndicator())
           : SingleChildScrollView(
-              physics: ScrollPhysics(),
+              physics: const ScrollPhysics(),
               child: Column(
                 children: [
                   Padding(
@@ -55,12 +52,12 @@ class HomeScreeViw extends StatelessWidget {
                         Row(
                           children: [
                             Expanded(
-                              child: Container(
+                              child: SizedBox(
                                 height: 400,
                                 width: 200,
                                 child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
-                                    physics: ClampingScrollPhysics(),
+                                    physics: const ClampingScrollPhysics(),
                                     shrinkWrap: true,
                                     itemCount: 2,
                                     itemBuilder: (BuildContext context,

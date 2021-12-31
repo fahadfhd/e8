@@ -3,7 +3,7 @@ import 'package:e8/bottom_nav/bottom_navigtion.dart';
 import 'package:e8/common_widgets/common_button.dart';
 import 'package:e8/common_widgets/common_text_field_without_border.dart';
 import 'package:e8/home/providers/home_provider.dart';
-import 'package:e8/home/screens/home_screen.dart';
+
 import 'package:e8/utils/colors.dart';
 import 'package:e8/utils/size_config.dart';
 import 'package:e8/utils/styles.dart';
@@ -135,11 +135,11 @@ class _SigninWithEmailState extends State<SigninWithEmail> {
                           buttonName: "Sign in",
                           style: tsS14White,
                           color: colorBlue,
-                          function: () async {
+                          function: () {
                             _isClicked = true;
                             FocusScope.of(context).unfocus();
                             if (_keyForm.currentState!.validate()) {
-                              await homeProvider.loadHome();
+                              homeProvider.loadHome();
                               Navigator.pushNamed(context, BottomNav.route);
                             }
                           },

@@ -1,7 +1,7 @@
 import 'package:e8/auth/screens/sign_in_screen.dart';
 import 'package:e8/common_widgets/common_button.dart';
 import 'package:e8/common_widgets/common_text_field_without_border.dart';
-import 'package:e8/home/screens/home_screen.dart';
+
 import 'package:e8/utils/colors.dart';
 import 'package:e8/utils/size_config.dart';
 import 'package:e8/utils/styles.dart';

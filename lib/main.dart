@@ -1,7 +1,6 @@
 import 'package:e8/auth/screens/sign_in_screen.dart';
-import 'package:e8/bottom_nav/bottom_navigtion.dart';
 import 'package:e8/home/providers/home_provider.dart';
-import 'package:e8/home/screens/home_screen.dart';
+
 import 'package:e8/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -19,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => HomeProvider())],
       child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
             primarySwatch: Colors.blue,

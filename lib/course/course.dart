@@ -12,7 +12,7 @@ class CourseScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text("Course")],
+            children: const [Text("Course")],
           ),
         ),
       ),
