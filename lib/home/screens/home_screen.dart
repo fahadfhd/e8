@@ -18,6 +18,12 @@ class HomeScreeViw extends StatelessWidget {
     return SafeArea(
       child: homeProvider.isLoading == true
           ? const Center(child: CircularProgressIndicator())
+          // child: homeProvider.homeModel!.iData[0].data == null
+          //     ? Container(
+          //         child: Center(
+          //           child: Text("No data"),
+          //         ),
+          //       )
           : SingleChildScrollView(
               physics: const ScrollPhysics(),
               child: Column(

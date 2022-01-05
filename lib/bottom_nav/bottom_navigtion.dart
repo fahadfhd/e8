@@ -1,8 +1,10 @@
 import 'package:e8/cart/cart_screen.dart';
 import 'package:e8/course/course.dart';
+import 'package:e8/home/providers/home_provider.dart';
 import 'package:e8/home/screens/home_screen.dart';
 import 'package:e8/utils/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class BottomNav extends StatefulWidget {
   static const String route = "/bottom_nav";
@@ -39,6 +41,7 @@ class _BottomNavState extends State<BottomNav> {
 
   @override
   Widget build(BuildContext context) {
+    HomeProvider homeProvider = Provider.of<HomeProvider>(context);
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       // appBar: AppBar(

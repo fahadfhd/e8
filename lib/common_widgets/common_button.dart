@@ -21,6 +21,7 @@ class CommonButton extends StatelessWidget {
   final bool? accIcon;
   final bool? isgoogle;
   final bool? isLike;
+  final bool? apple;
 
   final VoidCallback? function;
   const CommonButton({
@@ -44,6 +45,7 @@ class CommonButton extends StatelessWidget {
     this.enableRowText = false,
     this.isgoogle,
     this.isLike,
+    this.apple,
   }) : super(key: key);
 
   @override
@@ -91,6 +93,14 @@ class CommonButton extends StatelessWidget {
                             color: colore6e6e6,
                             child:
                                 Image(image: AssetImage('gmail'.asAssetpng())),
+                          ),
+                        if (apple == true)
+                          Container(
+                            height: 20,
+                            width: 20,
+                            color: colore6e6e6,
+                            child:
+                                Image(image: AssetImage('apple'.asAssetpng())),
                           ),
                         Text(
                           buttonName,

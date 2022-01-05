@@ -25,4 +25,7 @@ class WebAPIServices with WebAPIMixin {
       .then(super.validateResStatusData)
       .then((value) => getDataPartFromRes(value))
       .then((value) => HomeModel.fromJson(value));
+
+  
 }
+
