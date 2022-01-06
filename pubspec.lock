@@ -325,7 +325,7 @@ packages:
     source: hosted
     version: "1.0.0"
   sign_in_with_apple_web:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: sign_in_with_apple_web
       url: "https://pub.dartlang.org"
